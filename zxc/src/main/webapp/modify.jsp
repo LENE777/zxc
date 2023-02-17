@@ -9,39 +9,21 @@
 <SCRIPT language="JavaScript">
 function Check()
 {
-if (Modify.name.value.length < 1) {
-	alert("작성자를 입력하세요.");
-	Modify.name.focus(); 
-        return false;
-	}
-
 if (Modify.pass.value.length < 1) {
 	alert("비밀번호를 입력하세요.");
 	Modify.pass.focus(); 
 		return false;
 	}
-
-if (Modify.email.value.indexOf("@") + "" == "-1" ||
-	Modify.email.value.indexOf(".") + "" == "-1" ||
-	Modify.email.value == "" )
-	{ 
-		alert("E-mail을 입력하세요.");
-		Modify.email.focus();
-		return false;
-	}
-
 if (Modify.title.value.length < 1) {
 	alert("글제목을 입력하세요.");
 	Modify.title.focus(); 
 		return false;
     }
-
 if (Modify.contents.value.length < 1) {
 	alert("글내용을 입력하세요.");
 	Modify.content.focus(); 
 		return false;
     }
-
 Modify.submit();
 }
 
@@ -69,7 +51,7 @@ ResultSet rs = null;
 
 try {
 	
-String strSQL = "SELECT * FROM gm1 WHERE no = ?";
+String strSQL = "select*from gm1 where no=?";
 pstmt = conn.prepareStatement(strSQL);
 pstmt.setInt(1, Integer.parseInt(no));
 
@@ -166,9 +148,9 @@ int count = rs.getInt("count");
 
 <%
 }catch(SQLException e){
-   	out.print("SQL에러 " + e.toString());
+   	e.toString();
 }catch(Exception ex){
-   	out.print("JSP에러 " + ex.toString());
+   	ex.toString();
 }finally{  
 	rs.close();
 	pstmt.close();

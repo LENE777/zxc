@@ -23,9 +23,9 @@ if (member_input.id.value.length < 1){
 	return false;
 	}
 
-if (member_input.pass.value.length < 1){
+if (member_input.pw.value.length < 1){
 	alert("비밀번호를 입력하세요.");
-	member_input.pass.focus();
+	member_input.pw.focus();
 	return false;
 	}
 
@@ -34,17 +34,8 @@ if (member_input.name.value.length < 1){
 	member_input.name.focus();
 	return false;
 	}
-
 member_input.submit();
 }
-	  
-/*
-function ZipCode() 
-{
-browsing_window = window.open("zipcode2.jsp", "_zipinput","height=300,width=600, menubar=no,directories=no,resizable=no,status=no,scrollbars=yes");
-browsing_window.focus();
-}
-*/
 function Check_id() 
 {
 browsing_window = window.open("checkid.jsp?id="+member_input.id.value, "_idcheck","height=200,width=300, menubar=no,directories=no,resizable=no,status=no,scrollbars=yes");
@@ -79,7 +70,7 @@ browsing_window.focus();
 		<font color=ffffff size='2'>비 밀 번 호</font>
 	</TD>
 	<TD bgcolor=282828>
-		<input type='password' maxLength='10' size='10' name='pass'>
+		<input type='password' maxLength='10' size='10' name='pw'>
 	</TD>
 </TR>
 <TR>

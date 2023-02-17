@@ -47,7 +47,7 @@ a:hover {
 		</tr>
 	</TABLE>
 	<br>
-	<img src="img/5091110.jpg" width='1000' height='700'>
+	<img src="img/5091110.jpg" width='800' height='600'>
 </center>
 
 </body>

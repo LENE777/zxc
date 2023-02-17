@@ -108,7 +108,7 @@ if (id == "" || pass == "") {
 %>
 <TR>
 	<TD align="center">
-	<font size='2'>회원 ID가 아닙니다.</font>
+	<font size='2'>회원 ID가 아닙니다2.</font>
 	</TD>
 </TR>
 <TR>

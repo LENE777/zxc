@@ -8,21 +8,15 @@
 <SCRIPT LANGUAGE="JavaScript">
 function Check() 
 {
-if (idsearch.id.value.length < 1){
-	alert("아이디를 입력하세요.");
-	Member_Input.id.focus();
+if (idsearch.name.value.length < 1){
+	alert("이름을 입력하세요.");
+	idsearch.pass.focus();
 	return false;
 	}
 
 if (idsearch.phone.value.length < 1){
-	alert("비밀번호를 입력하세요.");
-	Member_Input.pass.focus();
-	return false;
-	}
-
-if (idsearch.email.value.length < 1){
-	alert("이름을 입력하세요.");
-	Member_Input.name.focus();
+	alert("전화번호를 입력하세요.");
+	idsearch.name.focus();
 	return false;
 	}
 
@@ -59,14 +53,12 @@ idsearch.submit();
 		<input type='text' maxlength='20' size='20' name='phone'>
 	</TD>
 </TR>
-<TR>
-	<TD bgcolor='000000' align='center'>
-		<font color=ffffff size='2'>E - M a i l</font>
-	</TD>
-	<TD bgcolor='000000'>
-		<input type='text' maxlength='50' size='50' name='email'>
-	</TD>
-</TR>
+</TABLE>
+<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+	<TR>
+		<TD><hr size='1' noshade>
+		</TD>
+ 	</TR>
 </TABLE>
 <TABLE>
 <TR>

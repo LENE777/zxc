@@ -31,7 +31,7 @@
 try{
 
 String strUser = "yes";
-String strSession = session.getAttribute("user").toString();
+String strSession = session.getAttribute("id").toString();
 
 if (!strUser.equals(strSession)) {
 %>

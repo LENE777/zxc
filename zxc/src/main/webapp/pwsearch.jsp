@@ -67,14 +67,12 @@ idsearch.submit();
 		<input type='text' maxlength='20' size='20' name='phone'>
 	</TD>
 </TR>
-<TR>
-	<TD bgcolor='000000' align='center'>
-		<font color=ffffff size='2'>E - M a i l</font>
-	</TD>
-	<TD bgcolor='000000'>
-		<input type='text' maxlength='50' size='50' name='email'>
-	</TD>
-</TR>
+</TABLE>
+<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
+	<TR>
+		<TD><hr size='1' noshade>
+		</TD>
+ 	</TR>
 </TABLE>
 <TABLE>
 <TR>

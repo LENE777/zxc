@@ -35,18 +35,17 @@ a:hover {
 </head>
 
 <body>
-<center>
-	<TABLE border='0' width='600' cellpadding='5' cellspacing='10'>
-		<tr>
-			<td bgcolor=282828 align=center>
-				<font size=5><a href=listboard1.jsp>게임1</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-				<font size=5><a href=listboard2.jsp>게임2</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-				<font size=5><a href=listboard3.jsp>게임3</a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-				<font size=5><a href=listboard4.jsp>게임4</a></font>
-			</td>
-		</tr>
-	</TABLE>
-</center>
+	<center>
+		<TABLE border='0' width='600' cellpadding='5' cellspacing='10'>
+			<tr>
+				<td bgcolor=282828 align=center><font size=5><a
+						href=listboard1.jsp>게임1</a></font>&nbsp;&nbsp;&nbsp;&nbsp; <font size=5><a
+						href=listboard2.jsp>게임2</a></font>&nbsp;&nbsp;&nbsp;&nbsp; <font size=5><a
+						href=listboard3.jsp>게임3</a></font>&nbsp;&nbsp;&nbsp;&nbsp; <font size=5><a
+						href=listboard4.jsp>게임4</a></font></td>
+			</tr>
+		</TABLE>
+	</center>
 	<%
 	String pageno = request.getParameter("pageno");
 	if (pageno == null) {
@@ -89,20 +88,20 @@ a:hover {
 
 		<TABLE border='0' cellspacing=1 cellpadding=2 width='600'>
 
-			<TR bgcolor='cccccc'>
-				<TD><font size=2><center>
+			<TR bgcolor='282828'>
+				<TD><font color='ffffff' size=2><center>
 							<b>번호</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>글 제목</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>작성자</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>작성일</b>
 						</center></font></TD>
-				<TD><font size=2><center>
+				<TD><font color='ffffff' size=2><center>
 							<b>조회</b>
 						</center></font></TD>
 			</TR>
@@ -148,10 +147,11 @@ a:hover {
 		</TABLE>
 
 		<TABLE border=0 width=600>
-			<TR>
-				<TD align=left></TD>
-
-				<TD align='right'><a href='write1.jsp'>[등록]</a></TD>
+			<tr>
+				<td align=left></td>
+			
+			
+				<TD bgcolor='282828' align='right'><a href='write1.jsp'>[등록]</a></TD>
 			</TR>
 		</TABLE>
 

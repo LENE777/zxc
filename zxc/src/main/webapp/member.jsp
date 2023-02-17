@@ -35,9 +35,9 @@ a:hover {
 			return false;
 		}
 
-		if (Member.pass.value.length < 1) {
+		if (Member.pw.value.length < 1) {
 			alert("비밀번호를 입력하세요.");
-			Member.pass.focus();
+			Member.pw.focus();
 			return false;
 		}
 		Member.submit();
@@ -49,7 +49,7 @@ a:hover {
 <BODY>
 
 	<center>
-		<font size='3'><b> 회원 인증 </b></font>
+		<font size='3'><b> 로 그 인 </b></font>
 
 		<TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
 			<TR>
@@ -69,13 +69,13 @@ a:hover {
 				</TR>
 				<TR>
 					<TD bgcolor='282828' align='right'><font color=ffffff size='2'>비밀번호	: </TD>
-					<TD bgcolor='282828' align='center'><input type='password'	maxlength='10' size='10' name='pass'></TD>
+					<TD bgcolor='282828' align='center'><input type='password'	maxlength='10' size='10' name='pw'></TD>
 					<TD bgcolor='282828'><font size='2'> <a href="member_input.jsp">[회원가입]</a></font></TD>
 				</TR>
 
 
 			</TABLE>
-			<table align=center width=300 border=0 cellpadding=0 cellspacing=0>
+			<table align=center width=300 border=0 cellpadding=2 cellspacing=0>
 				<tr>
 					<td bgcolor=282828 align=center>
 						<font size=2>

@@ -32,12 +32,12 @@ String no = request.getParameter("no");
 <form action='delete_input1.jsp' method='post'>
 <input type='hidden' name='no' value='<%=no %>'>
 
-<table border='0' width='300' align='center'>
+<table bgcolor='282828' border='0' width='300' align='center'>
 	<tr>
-		<td align='center'>
-			<font size='2'><b>비밀번호</b></font>
+		<td align='right'>
+			<font color='ffffff' size='2'><b>비밀번호</b></font>
 		</td>
-		<td>
+		<td align='center'>
 			<input type='password' name='pass' size=20 maxlength=20>
 			<input type='submit' value=' 확 인 ' style='background-color:cccccc; font-weight:bolder'>
 		</td>
@@ -51,7 +51,7 @@ String no = request.getParameter("no");
 	</tr>
 </table>
 
-<center><a href='listboard1.jsp'>[목록 보기]</a></center>
+<center><input type='button' onclick="location.href='listboard1.jsp'" value='돌아가기'></center>
 
 </form>
 
